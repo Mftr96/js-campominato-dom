@@ -28,7 +28,14 @@ Copiate tutto nella nuova repo, pushate
 Controllate il codice scritto finora e sistematelo. Avrete sicuramente molto codice "orfano", pezzi di codice commentati inutili, sezioni non commentate. Sistemate un pò in giro.
 Il punto da cui partire deve essere una pagina vuota che al click su di un pulsante genera delle celle che al click possano fare console.log del numero della cella. Se questo funziona siete a posto, la gestione della difficoltà è un bonus.
 Si parte!
-:roccia: MILESTONE #1: GENERARE LE BOME
+partenza fatta
+------------------------------------
+
+
+
+
+
+:roccia: MILESTONE #1: GENERARE LE BOMBE
 All'avvio della partita abbiamo bisogno di generare una lista di celle contenenti bombe. Le bombe:
 devono essere casuali
 devono essere sempre 16
@@ -39,10 +46,38 @@ Potete pensare a un ciclo che finchè non raggiunge lo scopo (16 bombe) continua
 generare numeri casuali
 controllare se sono già nella lista di bombe
 aggiungere il numero alla lista o ignorarlo, a seconda del caso
+-------
+esecuzione:
+nella consegna c'è scritto che all'avvio della partita (quindi al click del bottone), bisogna creare la lista di celle che contengono le bombe.
+come creo le celle bombe?
+
+-per ora assegno solo una classe con un colore diverso probabilmente
+forse non c'è neanche bisogno della classe perchè se creo la lista di numeri, posso poi andare a creare la condizione in cui controllo se il numero all'in terno del quadrato è incluso (tramite il comando includes) nella lista 
+
+
+
+-poi, dentro all'eventlistener devo o aggiungere un ciclo o farne un altro (forse la seconda) 
+
+- l'array delle bombe probabilmente lo lascio fuori dal ciclo per fare in modo  che poi dal ciclo pusha il numero ciclo !fatto , l'ho fatto in un ciclo a parte e per ora funziona
+
+
+
 :roccia: MILESTONE #2: CONTROLLARE LE CELLE
 Al click su una cella dovremmo controllare se QUELLA cella è inclusa nell'elenco di bombe. In baso al caso aggiungiamo coloriamo la cella di azzurro o di rosso.
+
+
+
+
+
+
 :roccia: MILESTONE #3: GESTIRE IL PUNTEGGIO
 Abbiamo bisogno di salvare un dato, il punteggio. Questo dato verrà resettato ad ogni avvio di partita. Inoltre ad ogni cella cliccata, se non è una bomba, dobbiamo incrementare il punteggio e stamparlo in console.
+
+
+
+
+
+
 :roccia: MILESTONE #4: YOU LOSE
 Abbiamo bisogno di gestire il caso in cui si clicca una bomba. A quel punto possiamo prendere il punteggio e segnalarlo all'utente (con alert o scrivendolo in pagina).
 Inoltre da quel momento non si può più cliccare in giro.
