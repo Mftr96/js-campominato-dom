@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+}
+
+#griglia {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.quadrato {
+    width: 100px;
+    height: 100px;
+    border: 1px solid crimson;
+}
+
+.azzurro{
+    background-color: lightblue;
+}
